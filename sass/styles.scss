@@ -1,0 +1,190 @@
+$red: #fc0c1a;
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    text-align: center;
+}
+
+.main-logo {
+    max-width: 200px;
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+.main-nav {
+    margin-top: 30px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+
+    a {
+        flex: 1;
+        display: inline-block;
+        padding: 12px 0;
+        background-color: rgba(0,0,0,0.2);
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+
+        &:hover {
+            background-color: #fc0c1a;
+        }
+    }
+}
+
+section {
+}
+// #fc0c1a
+
+.projects {
+    background-color: rgba(0,0,0,0.05);
+    padding: 40px 0;
+    margin-top: 40px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.15);
+}
+
+.b-project-list {
+    padding: 0;
+}
+
+.b-content {
+    list-style: none;
+    margin: 0;
+
+    .e-image {
+        margin: 40px 0;
+
+
+        img {
+            width: 40%;
+        }
+
+        margin-bottom: 40px;
+    }
+
+    .e-info {
+        flex: 3;
+        text-align: left;
+        font-weight: 100;
+        margin-bottom: 40px;
+
+        h2 {
+            margin: 40px 0;
+            color: $red;
+        }
+    }
+}
+
+.about {
+    .e-image {
+        opacity: .3;
+        background-image: url("../img/ekeko-logo-gray.png");
+        background-size: contain;
+        padding-bottom: 20%;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &:hover {
+            opacity: 1;
+            background-image: url("../img/ekeko-logo.png");
+
+        }
+    }
+}
+
+.b-slider {
+    width: 100%;
+    overflow: hidden;
+    overflow-x: scroll;
+
+    .e-slides-wrapper {
+        width: 155%;
+        margin: 0 40px
+    }
+
+    .e-slide {
+        width: 400px;
+        margin: 20px 10px;
+        box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+    }
+}
+
+.b-footer {
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+
+    a {
+        color: rgba(255,255,255,0.2);
+        margin: 10px 30px;
+        display: inline-block;
+
+        &:hover {
+            color: rgba(255,255,255,0.8);
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .main-nav,
+    .main-nav > a {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+.b-slider {
+    .e-slides-wrapper {
+        width: 500%;
+        margin: 0 0 0 5px;
+        
+        .e-slide {
+            width: calc(18.6%);
+        }
+
+    }
+}
+
+@media (min-width: 960px) {
+.wrapper {
+    max-width: 960px;
+}
+.b-content {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+
+    .e-image { 
+        flex: 1;
+
+        img {
+            width: 90%;
+            margin: 5%;
+        }
+    }
+    .e-info { 
+        flex: 3; 
+        margin-left: 60px;
+    }
+}
+
+}
